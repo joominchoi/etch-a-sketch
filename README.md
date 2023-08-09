@@ -6,7 +6,8 @@ Course reference pages: \
 [Project: Etch-a-Sketch](https://www.theodinproject.com/lessons/foundations-etch-a-sketch) \
 
 WIP:
-- Setting up project
+- Adding a button to the top of the screen that will send the user a popup asking for the number of 
+squares per side for the new grid.
 
 Thoughts:
 
