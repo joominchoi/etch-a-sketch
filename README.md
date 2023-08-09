@@ -13,6 +13,7 @@ Thoughts:
 Learnings:
 - grid-template-columns
 - Using a loop function to create a grid
+- [Element: mouseover event](https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseover_event#event_properties)
 
 Recapping:
 

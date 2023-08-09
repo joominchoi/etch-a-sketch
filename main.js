@@ -10,3 +10,10 @@ function makeGrid() {
 }
 
 makeGrid();
+
+container.addEventListener(
+  "mouseover",
+  (event) => {
+    event.target.style.background = "orange";
+	}
+)
