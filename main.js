@@ -5,7 +5,6 @@ function makeGrid() {
 		for (j = 1; j <= 16; j++) {
 			const row = document.createElement("div");
 			container.appendChild(row);
-			row.textContent = `${i},${j}`
 		}
 	}
 }
