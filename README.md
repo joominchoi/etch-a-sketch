@@ -11,6 +11,8 @@ WIP:
 Thoughts:
 
 Learnings:
+- grid-template-columns
+- Using a loop function to create a grid
 
 Recapping:
 
