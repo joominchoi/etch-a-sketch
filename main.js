@@ -50,10 +50,7 @@ function removeGrid() {
 }
 
 function myFunc() {
-	console.log("Hello")
-
 	numberPerSide = prompt("Grid size: Please enter a number between 0-100", `${numberPerSide}`);
-	squareSize = (gridHeight - (numberPerSide * 2)) / numberPerSide
 
 	if ((numberPerSide > 0) && (numberPerSide <= 100)) {
 		removeGrid();
@@ -64,9 +61,6 @@ function myFunc() {
 	} else {
 		alert("Invalid number");
 	}
-
-	console.log(numberPerSide)
-	console.log(squareSize)
 }
 
 makeGrid();
