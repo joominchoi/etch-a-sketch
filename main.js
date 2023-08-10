@@ -30,51 +30,46 @@ function updateSquareSize() {
 }
 
 function removeGrid() {
-	while(squares.length > 0) {
+	while (squares.length > 0) {
 		squares[0].remove();
- }
+	}
 }
 
-makeGrid();
-updateGridSize();
-updateSquareSize();
+function highlight() {
+	for (let square of squares) {
+		square.addEventListener(
+			"mouseover",
+			(event) => {
+				event.target.style.background = "orange";
+			}
+		)
+	}
 
-for (let square of squares) {
-	square.addEventListener(
-		"mouseover",
-		(event) => {
-			event.target.style.background = "orange";
-		}
-	)
 }
 
-// Apply the addEventListener method
 gridSizeButton.addEventListener("click", myFunc)
 
-// Defining the myFunc function
 function myFunc() {
-
-	// Increase the existing value by 1      
-	// Use the parseInt method to convert the existing      
-	// value (which is in string format) into integer
 	console.log("Hello")
 
 	numberPerSide = prompt("Grid size: Please enter a number between 0-100", `${numberPerSide}`);
 	squareSize = (gridHeight - (numberPerSide * 2)) / numberPerSide
-	
+
 	if ((numberPerSide > 0) && (numberPerSide <= 100)) {
 		removeGrid();
-		makeGrid();	
+		makeGrid();
 		updateGridSize();
 		updateSquareSize();
+		highlight();
 	} else {
 		alert("Invalid number");
 	}
 
 	console.log(numberPerSide)
 	console.log(squareSize)
-	// if (person != null) {
-	// 	document.getElementById("demo").innerHTML =
-	// 		"Hello " + person + "! How are you today?";
-	// }
 }
+
+makeGrid();
+updateGridSize();
+updateSquareSize();
+highlight();
