@@ -3,7 +3,7 @@
 #### Building a browser version of something between a sketchpad and an Etch-A-Sketch
 
 Course reference pages: \
-[Project: Etch-a-Sketch](https://www.theodinproject.com/lessons/foundations-etch-a-sketch) \
+[Project: Etch-a-Sketch](https://www.theodinproject.com/lessons/foundations-etch-a-sketch)
 
 WIP:
 - Adding a button to the top of the screen that will send the user a popup asking for the number of 

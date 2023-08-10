@@ -17,11 +17,11 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 700px;
-  width: 700px;
+  height: 800px;
+  width: 800px;
 }
 
 .square {
-  border: 0.5px solid rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
 }

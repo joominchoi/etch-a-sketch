@@ -1,7 +1,10 @@
 const grid = document.querySelector(".grid");
 
-numberPerSide = 10
-squareSize = 600 / numberPerSide
+let gridStyle = window.getComputedStyle(grid)
+let gridHeight = Number(gridStyle.getPropertyValue('height').replace('px', ''));
+
+numberPerSide = 100
+squareSize = gridHeight / numberPerSide
 console.log(squareSize)
 
 grid.style.gridTemplateColumns = `repeat(${numberPerSide}, auto)`;
