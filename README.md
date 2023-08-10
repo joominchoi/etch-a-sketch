@@ -15,6 +15,7 @@ Learnings:
 - grid-template-columns
 - Using a loop function to create a grid
 - [Element: mouseover event](https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseover_event#event_properties)
+- How to set CSS property with Javascript: [Change the grid-template-columns Property with JavaScript](https://www.w3schools.com/cssref/tryit.php?filename=trycss_js_grid-template-columns)
 
 Recapping:
 
