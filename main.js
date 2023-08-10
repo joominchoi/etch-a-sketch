@@ -1,6 +1,8 @@
 const grid = document.querySelector(".grid");
 
-numberPerSide = 100
+numberPerSide = 10
+squareSize = 600 / numberPerSide
+console.log(squareSize)
 
 grid.style.gridTemplateColumns = `repeat(${numberPerSide}, auto)`;
 
@@ -15,15 +17,17 @@ function makeGrid() {
 	}
 }
 
+const squares = document.getElementsByClassName("square")
+
 function updateSquareSize(){
-  var elements = document.getElementsByClassName('square');
-  Array.from(elements).forEach(function(element) {
-      element.style.height = '1px';
-      element.style.width = '1px';
+  Array.from(squares).forEach(function(square) {
+      square.style.height = `${squareSize}px`;
+      square.style.width = `${squareSize}px`;
   });
 }
 
-const squares = document.getElementsByClassName("square")
+makeGrid();
+updateSquareSize();
 
 for (let square of squares) {
 	square.addEventListener(
@@ -34,5 +38,3 @@ for (let square of squares) {
 	)
 }
 
-makeGrid();
-updateSquareSize();
