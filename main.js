@@ -5,8 +5,10 @@ const gridSizeButton = document.getElementById("gridSizeButton")
 const gridStyle = window.getComputedStyle(grid)
 const gridHeight = Number(gridStyle.getPropertyValue('height').replace('px', ''));
 
-let numberPerSide = 5
+let numberPerSide = 50
 let squareSize = (gridHeight - (numberPerSide * 2)) / numberPerSide
+
+gridSizeButton.addEventListener("click", myFunc)
 
 function makeGrid() {
 	for (i = 1; i <= numberPerSide; i++) {
@@ -29,12 +31,6 @@ function updateSquareSize() {
 	});
 }
 
-function removeGrid() {
-	while (squares.length > 0) {
-		squares[0].remove();
-	}
-}
-
 function highlight() {
 	for (let square of squares) {
 		square.addEventListener(
@@ -47,7 +43,11 @@ function highlight() {
 
 }
 
-gridSizeButton.addEventListener("click", myFunc)
+function removeGrid() {
+	while (squares.length > 0) {
+		squares[0].remove();
+	}
+}
 
 function myFunc() {
 	console.log("Hello")
