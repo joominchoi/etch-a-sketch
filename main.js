@@ -40,7 +40,6 @@ function highlight() {
 			}
 		)
 	}
-
 }
 
 function removeGrid() {
