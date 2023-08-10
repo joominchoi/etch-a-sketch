@@ -8,8 +8,6 @@ const gridHeight = Number(gridStyle.getPropertyValue('height').replace('px', '')
 let numberPerSide = 50
 let squareSize = (gridHeight - (numberPerSide * 2)) / numberPerSide
 
-gridSizeButton.addEventListener("click", myFunc)
-
 function makeGrid() {
 	for (i = 1; i <= numberPerSide; i++) {
 		for (j = 1; j <= numberPerSide; j++) {
@@ -31,6 +29,12 @@ function updateSquareSize() {
 	});
 }
 
+function removeGrid() {
+	while (squares.length > 0) {
+		squares[0].remove();
+	}
+}
+
 function highlight() {
 	for (let square of squares) {
 		square.addEventListener(
@@ -42,14 +46,11 @@ function highlight() {
 	}
 }
 
-function removeGrid() {
-	while (squares.length > 0) {
-		squares[0].remove();
-	}
-}
+gridSizeButton.addEventListener("click", myFunc)
 
 function myFunc() {
 	numberPerSide = prompt("Grid size: Please enter a number between 0-100", `${numberPerSide}`);
+	squareSize = (gridHeight - (numberPerSide * 2)) / numberPerSide
 
 	if ((numberPerSide > 0) && (numberPerSide <= 100)) {
 		removeGrid();
