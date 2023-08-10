@@ -1,13 +1,11 @@
 const grid = document.querySelector(".grid");
+const squares = document.getElementsByClassName("square")
 
 let gridStyle = window.getComputedStyle(grid)
 let gridHeight = Number(gridStyle.getPropertyValue('height').replace('px', ''));
 
 numberPerSide = 75
 squareSize = (gridHeight - (numberPerSide * 2)) / numberPerSide
-console.log(squareSize)
-
-grid.style.gridTemplateColumns = `repeat(${numberPerSide}, auto)`;
 
 function makeGrid() {
 	for (i = 1; i <= numberPerSide; i++) {
@@ -20,7 +18,7 @@ function makeGrid() {
 	}
 }
 
-const squares = document.getElementsByClassName("square")
+grid.style.gridTemplateColumns = `repeat(${numberPerSide}, auto)`;
 
 function updateSquareSize(){
   Array.from(squares).forEach(function(square) {
