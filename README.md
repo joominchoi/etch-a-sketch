@@ -2,11 +2,13 @@
 
 Building a browser version of something between a sketchpad and an Etch-A-Sketch
 
+Check it out [here](jooomin.github.io/etch-a-sketch/)!
+
 **Course reference pages:** \
 [Project: Etch-a-Sketch](https://www.theodinproject.com/lessons/foundations-etch-a-sketch)
 
 **WIP:**
-- Bonus step 1
+- Bonus challenge 1
 
 **Steps:**
 1. Create grid of square divs.
