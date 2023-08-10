@@ -1,11 +1,16 @@
 const container = document.querySelector(".grid");
 
+numberPerSide = 5
+
+container.style.gridTemplateColumns = `repeat(${numberPerSide}, auto)`;
+
 function makeGrid() {
-	for (i = 1; i <= 16; i++) {
-		for (j = 1; j <= 16; j++) {
+	for (i = 1; i <= numberPerSide; i++) {
+		for (j = 1; j <= numberPerSide; j++) {
 			const row = document.createElement("div");
-			row.classList.add("square")
+			row.classList.add("square");
 			container.appendChild(row);
+			
 		}
 	}
 }
