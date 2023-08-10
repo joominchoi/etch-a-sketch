@@ -15,16 +15,13 @@ function makeGrid() {
 	}
 }
 
-function makeSquare(){
+function updateSquareSize(){
   var elements = document.getElementsByClassName('square');
   Array.from(elements).forEach(function(element) {
       element.style.height = '1px';
       element.style.width = '1px';
   });
 }
-
-makeGrid();
-makeSquare();
 
 const squares = document.getElementsByClassName("square")
 
@@ -36,3 +33,6 @@ for (let square of squares) {
 		}
 	)
 }
+
+makeGrid();
+updateSquareSize();
