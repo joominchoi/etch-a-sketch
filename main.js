@@ -35,12 +35,19 @@ function removeGrid() {
 	}
 }
 
+function randomColorGen() {
+	const r = Math.floor(Math.random() * 256);
+	const g = Math.floor(Math.random() * 256);
+	const b = Math.floor(Math.random() * 256);
+	return "rgb(" + r + "," + g + "," + b + ")";
+}
+
 function highlight() {
 	for (let square of squares) {
 		square.addEventListener(
 			"mouseover",
 			(event) => {
-				event.target.style.background = "orange";
+				event.target.style.background = randomColorGen();
 			}
 		)
 	}
