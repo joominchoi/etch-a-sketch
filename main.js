@@ -6,7 +6,6 @@ const gridStyle = window.getComputedStyle(grid)
 const gridHeight = Number(gridStyle.getPropertyValue('height').replace('px', ''));
 
 let numberPerSide = 50
-let squareSize = (gridHeight - (numberPerSide * 2)) / numberPerSide
 
 function makeGrid() {
 	for (i = 1; i <= numberPerSide; i++) {
@@ -23,6 +22,8 @@ function updateGridSize() {
 }
 
 function updateSquareSize() {
+	let squareSize = (gridHeight - (numberPerSide * 2)) / numberPerSide
+
 	Array.from(squares).forEach(function (square) {
 		square.style.height = `${squareSize}px`;
 		square.style.width = `${squareSize}px`;
@@ -70,7 +71,9 @@ function myFunc() {
 	}
 }
 
-makeGrid();
-updateGridSize();
-updateSquareSize();
-highlight();
+window.onload = () => {
+  makeGrid();
+  updateGridSize();
+	updateSquareSize();
+	highlight();
+}
