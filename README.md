@@ -34,6 +34,7 @@ This was a thoroughly enjoyable project with many new learnings and a recapping 
 - [Element: mouseover event](https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseover_event#event_properties)
 - How to get and set CSS property with Javascript: [Change the grid-template-columns Property with JavaScript](https://www.w3schools.com/cssref/tryit.php?filename=trycss_js_grid-template-columns)
 - HTMLCollection and how to remove them
+- [onchange vs. oninput for Range Sliders](https://www.impressivewebs.com/onchange-vs-oninput-for-range-sliders/)
 
 **Recapping:**
 - Putting code into functions so they are reusable
