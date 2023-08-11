@@ -6,6 +6,7 @@ body {
 }
 
 header {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   display: flex;
   justify-content: center;
   font-size: 50px;
@@ -25,6 +26,10 @@ header {
   padding-top: 50px;
   gap: 30px;
   width: 200px;
+}
+
+.size-value {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 input {
