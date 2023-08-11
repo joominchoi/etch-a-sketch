@@ -12,9 +12,11 @@
   <header>
     Etch-a-Sketch
   </header>
-  <div class="container">
-    <input type="range" min="1" max="100" value="10" oninput="reloadGrid(this.value)" id="sizeSlider">
-    <p id="sizeValue"></p>
+  <div class="main-container">
+    <div class="settings">
+      <div id="sizeValue"></div>
+      <input type="range" min="1" max="100" value="10" oninput="reloadGrid(this.value)" id="sizeSlider">
+    </div>
     <div class="grid"></div>
   </div>
 
