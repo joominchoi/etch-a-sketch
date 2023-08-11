@@ -3,6 +3,8 @@ const DEFAULT_NUMBER_PER_SIDE = 10
 const grid = document.querySelector(".grid");
 const squares = document.getElementsByClassName("square")
 const gridSizeButton = document.getElementById("gridSizeButton")
+const sizeValue = document.getElementById('sizeValue')
+const sizeSlider = document.getElementById('sizeSlider')
 
 const gridStyle = window.getComputedStyle(grid)
 const gridHeight = Number(gridStyle.getPropertyValue('height').replace('px', ''));
@@ -54,6 +56,10 @@ function highlight() {
 	}
 }
 
+function updateSizeValue(value) {
+  sizeValue.innerHTML = `${value} x ${value}`
+}
+
 gridSizeButton.addEventListener("click", changeGridSize)
 
 function changeGridSize() {
@@ -74,5 +80,6 @@ window.onload = () => {
   makeGrid(DEFAULT_NUMBER_PER_SIDE);
   updateGridSize(DEFAULT_NUMBER_PER_SIDE);
 	updateSquareSize(DEFAULT_NUMBER_PER_SIDE);
+	updateSizeValue(DEFAULT_NUMBER_PER_SIDE)
 	highlight();
 }
