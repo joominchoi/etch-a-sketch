@@ -11,11 +11,11 @@
 <body>
   <div class="container">
     <button id="gridSizeButton">Change Gride Size</button>
-    <div id="sizeValue">10 x 10</div>
-    <input type="range" min="1" max="100" value="50" class="slider" id="sizeSlider">
+    <input type="range" min="1" max="100" value="10" oninput="changeGridSize(this.value)" id="sizeSlider">
+    <p id="sizeValue"></p>
     <div class="grid"></div>
   </div>
-  
+
 </body>
 
 <script src="main.js"></script>

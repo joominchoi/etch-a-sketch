@@ -56,15 +56,12 @@ function highlight() {
 	}
 }
 
-function updateSizeValue(value) {
-  sizeValue.innerHTML = `${value} x ${value}`
-}
-
 gridSizeButton.addEventListener("click", changeGridSize)
 
-function changeGridSize() {
-	numberPerSide = prompt("Grid size: Please enter a number between 0-100", `${DEFAULT_NUMBER_PER_SIDE}`);
+function changeGridSize(value) {
+	updateSizeValue(value)
 
+	numberPerSide = value
 	if ((numberPerSide > 0) && (numberPerSide <= 100)) {
 		removeGrid();
 		makeGrid(numberPerSide);
@@ -76,9 +73,13 @@ function changeGridSize() {
 	}
 }
 
+function updateSizeValue(value) {
+    sizeValue.innerHTML = `${value} x ${value}`;
+}
+
 window.onload = () => {
-  makeGrid(DEFAULT_NUMBER_PER_SIDE);
-  updateGridSize(DEFAULT_NUMBER_PER_SIDE);
+	makeGrid(DEFAULT_NUMBER_PER_SIDE);
+	updateGridSize(DEFAULT_NUMBER_PER_SIDE);
 	updateSquareSize(DEFAULT_NUMBER_PER_SIDE);
 	updateSizeValue(DEFAULT_NUMBER_PER_SIDE)
 	highlight();
