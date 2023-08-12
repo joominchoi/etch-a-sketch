@@ -66,6 +66,22 @@ input::-moz-range-thumb {
   cursor: pointer;
 }
 
+#clearButton {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-color: #9f9f9f;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#clearButton:hover {
+  background-color: #1c1c1c;
+}
+
 .grid {
   display: grid;
   /* justify-content: center;
