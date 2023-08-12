@@ -4,9 +4,12 @@ const grid = document.querySelector(".grid");
 const squares = document.getElementsByClassName("square")
 const sizeValue = document.getElementById('sizeValue')
 const sizeSlider = document.getElementById('sizeSlider')
+const clearButton = document.getElementById('clearButton')
 
 const gridStyle = window.getComputedStyle(grid)
 const gridHeight = Number(gridStyle.getPropertyValue('height').replace('px', ''));
+
+clearButton.onclick = () => clear()
 
 function makeGrid(numberPerSide) {
 	for (i = 1; i <= numberPerSide; i++) {
@@ -53,6 +56,13 @@ function highlight() {
 			}
 		)
 	}
+}
+
+function clear() {
+	for (let square of squares) {
+		square.style.background = "white"
+	}
+	console.log("hello")
 }
 
 function updateSizeValue(value) {
