@@ -1,24 +1,15 @@
 html,
 body {
-  height: 100%;
-  width: 100%;
   background-color: rgb(193, 190, 190);
-}
-
-header {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  display: flex;
-  justify-content: center;
-  font-size: 50px;
-  line-height: 75px;
+  padding-top: 2%;
 }
 
 .main-container {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  /* justify-content: space-evenly; */
   gap: 100px;
-  max-width: 1450px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -28,7 +19,15 @@ header {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  width: 200px;
+  min-width: 300px;
+  /* padding-left: 100px; */
+}
+
+header {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
 }
 
 .size-value {

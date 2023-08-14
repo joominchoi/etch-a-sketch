@@ -9,11 +9,12 @@
 </head>
 
 <body>
-  <header>
-    Etch-a-Sketch
-  </header>
+  
   <div class="main-container">
     <div class="settings">
+      <header>
+        Etch-a-Sketch
+      </header>
       <div class="size-value" id="sizeValue"></div>
       <input type="range" min="1" max="100" value="10" oninput="reloadGrid(this.value)" id="sizeSlider">
       <button id="clearButton" onclick="clear()">Clear</button>
