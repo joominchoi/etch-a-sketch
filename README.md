@@ -7,6 +7,25 @@ Check it out [here](https://jooomin.github.io/etch-a-sketch/)!
 **Course reference pages:** \
 [Project: Etch-a-Sketch](https://www.theodinproject.com/lessons/foundations-etch-a-sketch)
 
+**Thoughts:** \
+This was a thoroughly enjoyable project with many new learnings and a recapping of basic programming best practices. Of course there were frustrations along the way, but I was again reminded of the following:
+- Tackle one problem at a time
+- Don't be afraid to approach a problem from different angles
+- Don't be precious of code! Commit regularly and make use of Git
+- Don't try to come up with the most optimal code from the get go. Get a working solution going first and then refactor.
+- Write down my ideas for solutions on pen and paper to untangle mind
+
+**Learnings:**
+- grid-template-columns
+- Using a loop function to create a grid
+- [Element: mouseover event](https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseover_event#event_properties)
+- How to get and set CSS property with Javascript: [Change the grid-template-columns Property with JavaScript](https://www.w3schools.com/cssref/tryit.php?filename=trycss_js_grid-template-columns)
+- HTMLCollection and how to remove them
+- [onchange vs. oninput for Range Sliders](https://www.impressivewebs.com/onchange-vs-oninput-for-range-sliders/)
+
+**Recapping:**
+- Putting code into functions so they are reusable
+
 **WIP:**
 - Bonus challenge 1
 
@@ -38,4 +57,3 @@ This was a thoroughly enjoyable project with many new learnings and a recapping 
 
 **Recapping:**
 - Putting code into functions so they are reusable
-
