@@ -116,7 +116,6 @@ footer {
 #footer-signature {
   display: flex;
   justify-content: center;
-  position: absolute;
 
   gap: 10px;
 }
