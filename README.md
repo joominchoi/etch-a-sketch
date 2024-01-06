@@ -2,7 +2,7 @@
 
 Building a browser version of something between a sketchpad and an Etch-A-Sketch
 
-Check it out [here](https://jooomin.github.io/etch-a-sketch/)!
+Check it out [here](https://joominchoi.github.io/etch-a-sketch/)!
 
 **Course reference pages:** \
 [Project: Etch-a-Sketch](https://www.theodinproject.com/lessons/foundations-etch-a-sketch)
